@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0;
+  }
+
+  html,
+  body,
+  #root {
+    @apply min-h-screen w-full;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+    font-family:
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    @apply outline-none;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+}
